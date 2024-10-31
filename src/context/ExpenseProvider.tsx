@@ -1,5 +1,5 @@
 // src/context/ExpenseProvider.tsx
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { ExpenseContext } from './ExpenseContext';
 import { useExpenseActions } from './useExpenseActions';
 
