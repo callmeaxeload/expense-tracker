@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Expense Tracker
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **Expense Tracker** is a web application built with React, Vite, TypeScript, and Bootstrap, designed to help users manage their personal finances by tracking expenses effectively. Users can input their expenses, categorize them, and view a summary of their spending habits, making it easier to monitor and control their finances.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Add Expenses**: Users can input the amount, date, category, and description of each expense.
+- **Categorization**: Expenses can be categorized (e.g., Food, Transportation, Entertainment) to provide insights into spending patterns.
+- **Filter Expenses**: Users can filter their expenses by category and date to quickly find specific transactions.
+- **Summary View**: A summary of total expenses is displayed, helping users visualize their spending.
+- **Responsive Design**: The app is designed with Bootstrap, ensuring it looks great on various devices.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: For building the user interface.
+- **Vite**: A fast development server for React applications.
+- **TypeScript**: Provides type safety for better development experience.
+- **Bootstrap**: For responsive styling and layout.
+- **Context API**: For state management across the application.
+- **Nano ID**: For generating unique IDs for each expense.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To run the project locally, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/expense-tracker.git
+   cd expense-tracker
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the specified port in your terminal).
+
+## Usage
+
+Once the application is running, users can easily add expenses through the form. They can view a list of added expenses, filter them based on category or date, and see a summary of their total expenses.
+
+## Contribution
+
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
